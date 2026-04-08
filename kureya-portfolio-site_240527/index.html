@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+JP:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kureya </title>
+    <script src="js/jquery-3.6.3.min.js" defer></script>
+    <script src="js/slick.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- マウスストーカーhttps://junpei-sugiyama.com/mouse-stalker/#google_vignette/ -->
+    <div class="stalker" id="js-stalker"></div>
+
+
+    <!-- 背景のアニメーション -->
+    <div id="particles-js"></div>
+
+
+    <!-- オープニング -->
+    <div class="shutter"></div>
+
+    <header>
+
+        <p id="page-top"><a href="#"><span>Page Top</span></a></p>
+        <nav class="pc-nav">
+            <ul>
+                <li>
+                    <a href="#profile">Profile</a>
+                </li>
+                <li>
+                    <a href="#skill">Skill</a>
+                </li>
+                <li>
+                    <a href="#design">Banner</a>
+                </li>
+                <li>
+                    <a href="#web">Web</a>
+                </li>
+                <li>
+                    <a href="#video">Video</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- スマートフォン版ハンバーガーメニュー -->
+        <nav class="sp-nav">
+            <ul>
+                <li>
+                    <a href="#profile">Profile</a>
+                </li>
+                <li>
+                    <a href="#skill">Skill</a>
+                </li>
+                <li>
+                    <a href="#design">Banner</a>
+                </li>
+                <li>
+                    <a href="#web">Web</a>
+                </li>
+                <li>
+                    <a href="#video">Video</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sp-open-btn"><span></span><span></span><span></span></div>
+
+    </header>
+    <main>
+
+        <section id="top-hero" class="top-hero">
+            <nav class="title">
+                <div>
+                    <p>
+                        <span>P</span>
+                        <span>O</span>
+                        <span>R</span>
+                        <span>T</span>
+                        <span>F</span>
+                        <span>O</span>
+                        <span>L</span>
+                        <span>I</span>
+                        <span>O</span>
+                    </p>
+                </div>
+            </nav>
+        </section>
+
+
+        <section id="profile" class="container effect-fade">
+            <h2 class="h1-portfolio  animate__animated">
+                <div class="c07 active">Profile</div>
+            </h2>
+            <div class="profile-box">
+                <div class="profile-box-left">
+                    <!-- (一文字ずつでる文字アニメーション)https://mitsutano-oshiro.com/archives/2160 -->
+
+                    <div class="profile-name-box">
+                        <div class="txt">
+                            <p>呉</p>
+                            <p class="txt-space">屋</p>
+                            <p>栄</p>
+                            <p>光</p>
+                        </div>
+                        <div class="txt">
+                            <p>く</p>
+                            <p>れ</p>
+                            <p class="txt-space">や</p>
+
+                            <p>ひ</p>
+                            <p>で</p>
+                            <p>み</p>
+                            <p>つ</p>
+                        </div><!-- /.txt -->
+
+                    </div>
+                    <p class="bgextend bgUDextendTrigger bgappearTrigger">
+                        はじめまして。福岡から来阪した呉屋栄光です。これまでに自衛隊や営業など、を経験してきました。<br>
+                        営業では大きな現場を任せてもらえたり、資格を使って商品のい取り付けも行い、多岐にわたる知識と経験を学びました。<br>
+                        デザインやPCを用いた作業が好きで、業務の中でマニュアルやお客様の要望で図の作成もしました。満足度を高めるための努力を重ね、感謝の言葉をいただくこともありました。大きなやりがいを感じていました。<br>
+                        より専門的な知識と技術を身につけたいとこの度職業訓練学校に通い、将来はWeb業界に携われるよう日々精進しております。<br>
+                        これからも学びの精神を忘れず、仕事でも貢献できるように尽力してまいります。趣味はピアノを弾く（独学）、読書（心理学）などです。
+
+
+
+                    </p>
+                </div>
+
+                <figure>
+
+                    <div class="circle">
+
+
+                        <!-- portfolio写真回転（jQuery）https://www.kansuke-prg.com/jquery/rotation -->
+                        <div id="rotate-area">
+                            <div class="rotate-target omote" id="omote">
+                                <img src="images/profile.png">
+
+                            </div>
+                            <div class="rotate-target ura" id="ura">
+                                <img src="images/portfolio2.png">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </figure>
+            </div>
+
+            <!-- 回転アニメーション -->
+            <div class="box">
+                <img src="images/clock (2).svg" alt="" />
+            </div>
+
+
+            <div class="box-gear">
+                <img src="images/gear.svg" alt="" />
+            </div>
+        </section>
+
+
+
+        <section id="skill" class="container effect-fade">
+
+
+            <h2 class="h2-skill animate__animated">
+                <div class="c07 active">Skill</div>
+            </h2>
+
+
+            <div class="skill-box">
+
+                <ul>
+
+                    <li>
+                        <figure>
+
+
+                            <div class="flipY"><a href="#skill"><img src="images/PS.png" alt=""><span
+                                        class="cap">フォトショップ</span></a></div>
+
+                        </figure>
+                        <p class="skill-name">PS </p>
+                        <p>写真や画像の加工・編集、レタッチ、レイヤー、切り抜き、図形の作成などの基本操作が可能です。バナー作成の際に使用しました。
+                        </p>
+                    </li>
+                    <li>
+                        <figure>
+                            <div class="flipY"><a href="#skill"><img src="images/AI.png" alt=""><span
+                                        class="cap">イラストレーター</span></a></div>
+                        </figure>
+                        <p class="skill-name">AI </p>
+                        <p>図形や線の描画、簡単なアイコン・ロゴ作成、画像のパス化が可能です。ポートフォリオのアイコンはIllustratorで作成しました
+                        </p>
+                    </li>
+                    <li>
+                        <figure>
+                            <div class="flipY"><a href="#skill"><img src="images/PJ.png" alt=""><span
+                                        class="cap">プレミアプロ</span></a></div>
+                        </figure>
+                        <p class="skill-name">Pr </p>
+                        <p>動画のトリミング、画像の追加、BGMや効果音、文字入力やエフェクト・アニメーション加工などを付けた動画編集が可能です。
+                        </p>
+                    </li>
+                    <li>
+                        <figure>
+                            <div class="flipY"><a href="#skill"><img src="images/WP.png" alt=""><span
+                                        class="cap">ワードプレス</span></a></div>
+                        </figure>
+                        <p class="skill-name">WP </p>
+                        <p>基本的なLPページの作成に使用しました
+                        </p>
+                    </li>
+                    <li>
+                        <figure>
+                            <div class="flipY"><a href="#skill"><img src="images/CSS.png" alt=""><span
+                                        class="cap">カスケーディング <br>スタイル <br>シート</span></a></div>
+                        </figure>
+                        <p class="skill-name">CSS </p>
+                        <p>CSSの基本的な構造を理解したコーディングが可能です。 Vscodeを用いてサイト制作することができます
+                        </p>
+                    </li>
+                    <li>
+                        <figure>
+                            <div class="flipY"><a href="#skill"><img src="images/HTML.png" alt=""><span
+                                        class="cap">ハイパーテキスト<br>マークアップ <br>ランゲージ</span></a></div>
+                        </figure>
+                        <p class="skill-name">HTML </p>
+                        <p>HTML・CSSの基本的な構造を理解したコーディングが可能です。 Vscodeを使用し、サイトの作成が可能です。
+                        </p>
+                    </li>
+                    <li>
+                        <figure>
+                            <div class="flipY"><a href="#skill"><img src="images/JS.png" alt=""><span
+                                        class="cap">ジャバスクリプト</span></a></div>
+                        </figure>
+                        <p class="skill-name">JS </p>
+                        <p>Java Scriptの基本知識。Java ScriptやjQueryを使用して、サイトにスライドショーなどの動きを付ける事が可能です。
+                        </p>
+                    </li>
+                    <li>
+                        <figure>
+                            <div class="flipY"><a href="#skill"><img src="images/WordPowerPointExcel.png" alt=""><span
+                                        class="cap">ワード<br>パワーポイント<br>エクセル</span></a></div>
+
+                        </figure>
+                        <p class="skill-name">Word <br> PowerPoint <br> Excel </p>
+                        <p>文章や画像、アニメーションや効果音を用いた基本操作が可能です。それらを使用し、プレゼンテーションの資料作成ができます。
+                            又Wordは2級、Excelは3級持っております。
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <!-- 猫の足跡のアニメーション -->
+            <div class="steps"></div>
+        </section>
+
+        <section id="design" class="effect-fade">
+
+            <h2 class="h3-Design animate__animated">
+                <div class="c07 active">Design</div>
+            </h2>
+
+            <div class="design-wrapper">
+
+                <!-- アニメーション電車 -->
+                <div class="demo_stage">
+                    <div class="demo_wrap" data-order="left">
+                        <span class="demo_item anime"></span>
+                    </div>
+                </div>
+
+
+                <section id="banner" class="container effect-fade">
+                    <h3>
+                        <div class="c07 active">banner</div>
+                    </h3>
+
+                    <div class="banner-box">
+                        <ul>
+                            <li class="bgDU">
+                                <a href="#"><span class="mask">
+                                        <img src="images/ps_banner-ドーナツ.png" alt="食べ物対決バナー"><span class="cap">
+                                            <h4>ターゲット層:20代～30代女性</h4><br>
+                                            マフィンとクレープのバナーです。 クレープとマフィンが対比するように色を分けて、対決をイメージできるようにデザインにしました。
+                                        </span>
+                                    </span></a>
+                                <p class="banner-name"> フードバナー </p>
+                            </li>
+                            <li class="bgDU">
+                                <a href="#"><span class="mask">
+
+                                        <img src="images/zakka_banner-baiku.webp" alt="自転車バナー"><span class="cap">
+
+                                            <h4>ターゲット層:20代～30代男性</h4><br>
+                                            自転車バナーです。 全体的に自転車の要素と青色を入れることで
+                                            大人向けの自転車屋さんを連想させるデザインにしました。
+                                        </span>
+                                    </span></a>
+                                <p class="banner-name"> サイクリング屋バナー </p>
+                            </li>
+                            <li class="bgDU">
+                                <a href="#"><span class="mask">
+                                        <img src="images/food_banner-gekikaea-karaagepsd.webp" alt="唐揚げバナー"><span
+                                            class="cap">
+                                            <h4>ターゲット層:20～50代</h4><br>
+                                            辛い唐揚げを売りにしている、お弁当屋さんをイメージしたバナーです。<br>
+                                            辛い唐揚げが好きな人をターゲットとし、一目で辛いと伝わるようなデザインと、できるだけわかりやすく目立つフォントで書きました。
+                                        </span></span></a>
+                                <p class="banner-name"> 激辛！唐揚げ弁当バナー</p>
+                            </li>
+                            <li class="bgDU">
+                                <a href="#"><span class="mask">
+                                        <img src="images/food_banner-birthday-hoteel.webp" alt="ｸﾘｽﾏｽ"><span
+                                            class="cap">
+                                            <h4>ターゲット層:20～30代 男女</h4><br>
+                                            恋人と夜景を見ながらディナーをイメージしたバナーです。<br>
+                                            クリスマスや誕生日を恋人とお祝いしたい人をターゲットとし、夜景とすこし高級感のあるデザインにしました。
+                                        </span></span></a>
+                                <p class="banner-name"> 夜景バナー</p>
+                            </li>
+                            <li class="bgDU">
+                                <a href="#"><span class="mask">
+                                        <img src="images/travel_banner-mojikouwebp.webp" alt="門司港"><span class="cap">
+                                            <h4>ターゲット層:20～60代 男女</h4><br>
+                                            北九州の門司港の旅行をイメージしたバナーです。<br>
+                                            門司港のレトロ感を出すために、全体的に落ち着いた色にしつつ、画像一枚一枚を目立たせることで、門司港のイメージを崩さず、老若男女問わず、見てしまうバナー仕上げました。
+                                        </span></span></a>
+                                <p class="banner-name"> 門司港バナー</p>
+                            </li>
+                            <li class="bgDU">
+                                <a href="#"><span class="mask">
+                                        <img src="images/ps_banner-fashion-kannkoku.webp" alt="韓国バナー"><span class="cap">
+                                            <h4>ターゲット層:20代 男女</h4><br>
+                                            韓国ファッションをイメージした、バナーです。<br>
+                                            シンプルだけど、きれい目感を出すために全体的白にし、そこに少しデザインを加えることで、韓国らしく、綺麗目な清潔感のある、バナーに仕上げました。
+                                        </span></span></a>
+                                <p class="banner-name"> 韓国ファッションバナー </p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="web" class="container effect-fade">
+
+                    <h3 class="h3-web animate__animated">
+                        <div class="c07 active">web</div>
+                    </h3>
+
+                    <div class="web-box">
+                        <ul>
+                            <li>
+                                <a href="lp01.html">
+                                    <figure>
+                                        <img src="images/lp-img.webp" alt="">
+                                    </figure>
+                                </a>
+                                <p class="web-name">淡路島のLP</p>
+                                <p>ターゲット：20代のカップル
+                                    淡路島のLPです。
+                                    夏に淡路島旅行にカップルで行きたくなるようなデザインにしました。
+                                    背景は落ち着いた色で統一し、場所に応じて背景を変えたり、文章も簡潔にして、写真が映えるような全体的にシンプルなデザインにしました。</p>
+                            </li>
+                            <li>
+                                <a href="group01.html">
+                                    <figure>
+                                        <img src="images/TOP.webp" alt="">
+                                    </figure>
+                                </a>
+                                <p class="web-name">お茶のオーガニック化粧品</p>
+                                <p>こちらはグループワークで作成したオーガニック化粧品のECサイトです。チームで連携を取り、コンセプト決め、デザインを行いました。お茶と化粧品とのバランスを考え、メインカラーに緑と薄橙色を使用することで、シンプルかつ自然の温かさが感じられるようデザインを工夫しました。
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+
+        <section id="video" class="container effect-fade">
+            <h2 class="h2-video  animate__animated">
+                <div class="c07 active">video</div>
+            </h2>
+
+            <div class="video-box">
+                <div class="wood">
+                    <img src="images/wood.svg" alt="">
+                </div>
+                <div class="layout updown">
+                    <img src="images/apple.svg" alt="">
+                </div>
+                <div class="newton">
+                    <img src="images/newton.svg" alt="">
+                </div>
+                <ul>
+                    <li class="video-list-01">
+                        <video src="video/movie01.mp4" controls> </video>
+                        <p class="video-name">夢</p>
+                        <p>睡眠用アプリをイメージして作成しました。寝ている主人公の夢を再現しました。
+                        </p>
+                    </li>
+                    <li class="video-list-02">
+                        <video src="video/movie02.mp4" controls> </video>
+                        <p class="video-name">電子書籍</p>
+                        <p>小説の物語をイメージして作成しました。小説の物語を再現しました。</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="like" class="like">
+            <h2 class="h2-like animate__animated">
+                <div class="c07 active">like</div>
+            </h2>
+
+            <ul id="slick-slider" class="slider">
+                <li>
+                    <img src="images/dog.png" alt="">
+                </li>
+                <li>
+                    <img src="images/friend.png" alt="">
+                </li>
+                <li>
+                    <img src="images/piano.png" alt="">
+                </li>
+                <li>
+                    <img src="images/MOJIKOUstation.png" alt="">
+                </li>
+                <li>
+                    <img src="images/ship.png" alt="">
+                </li>
+                <li>
+                    <img src="images/cake.png" alt="">
+                </li>
+                <li>
+                    <img src="images/bird.png" alt="">
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        &copy;Kureya hidemitu Portfolio site
+
+    </footer>
+
+    <!-- 背景のアニメーション2 -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!--自作のJS-->
+
+    <!-- 猫の足跡のアニメーション -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <!--自作のJavaScript-->
+    <!-- <script src="js/9-3-4.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</body>
+
+</html>
